@@ -40,3 +40,5 @@ CREATE TABLE transactions (
 );
 
 ALTER TABLE transactions ADD COLUMN receiver VARCHAR(255);
+
+pg_dump your_database_name > backup.sql

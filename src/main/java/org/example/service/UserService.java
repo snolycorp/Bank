@@ -51,4 +51,8 @@ public class UserService {
         }
         return false;
     }
+
+    public Optional<User> findUserByUsernameOrEmail(String keyword) {
+        return userRepository.findByUsernameOrEmail(keyword, keyword);
+    }
 }
